@@ -19,15 +19,15 @@ app.post("/", (req, res) => {
   //console.log("First Name: " + Fname);
   //console.log("Last Name: " + Lname);
   //res.send("Data received");
-  res.send("Data received</br>" + "First Name: " + Fname + "</br>Last Name: " + Lname);
-  // res.send([mobileNO
-  //   'Data received',
-  //   `First Name: ${Fname}`,
-  //   `Last Name: ${Lname}`,
-  //   `Mobile Number: ${mobileNO}`,
-  //   `E-mail: ${email}`,
-  //   `Income: ${income}`,
-  // ]);
+  //res.send("Data received</br>" + "First Name: " + Fname + "</br>Last Name: " + Lname);
+  res.send([
+    'Data received',
+    `First Name: ${Fname}`,
+    `Last Name: ${Lname}`,
+    `Mobile Number: ${mobileNO}`,
+    `E-mail: ${email}`,
+    `Income: ${income}`,
+  ]);
 
 });
  
