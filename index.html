@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Aommy love Cherry</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <style>
+
+   </style>
+</head>
+<br>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+   <h1>Register Form</h1></br></br>
+   
+  
+
+   <form class="row g-3 needs-validation" novalidate>
+      <div class="row">
+        <div class="form-floating col-md-4">
+          <input type="text" class="form-control" id="validationCustom01" placeholder="ชื่อ" required>
+          <label for="validationCustom01" class="form-label">ชื่อ</label>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row"><br /></div>
+        <div class="row">
+          <div class="form-floating col-md-4">
+            <input type="text" class="form-control" id="validationCustom02" placeholder="นามสกุล" required>
+            <label for="validationCustom02" class="form-label">นามสกุล</label>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+        </div>
+
+      
+      <div class="row"><br /></div>
+        <div class="row">
+          <div class="form-floating col-md-4">
+            <input type="text" class="form-control" id="validationCustom03" placeholder="เบอร์โทร" required>
+            <label for="validationCustom03" class="form-label">เบอร์โทร</label>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+        </div>
+
+      <div class="row"><br /></div>
+      <div class="row">
+        <div class="form-floating col-md-4">
+          <input type="email" class="form-control" id="validationCustom04" placeholder="name@example.com" required>
+          <label for="validationCustom04">E-mail</label>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row"><br /></div>
+      <div class="row">
+      <div class="form-floating col-md-4">
+        <select class="form-select" id="validationCustom05" required>
+          <option selected disabled value="">- กรุณาเลือก -</option>
+          <option value="15,000-29,000">15,000-29,000 บาท</option>
+          <option value="30,000-49,000">30,000-49,000 บาท</option>
+          <option value="50,000+">50,000 บาท ขึ้นไป</option>
+        </select>
+        <label for="validationCustom05" class="form-label">รายได้ต่อเดือน</label>
+        <div class="invalid-feedback">
+          Please select a valid income.
+        </div>
+      </div>
+      </div>
+      
+      <div class="row"><br /></div>
+      <div class="row">
+      <div class="col-md-4">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+          <label class="form-check-label" for="invalidCheck">
+            ข้าพเจ้ารับทราบว่า ข้าพเจ้าแจ้งความประสงค์ขอสมัครใช้ผลิตภัณฑ์กับบริษัทบัตรกรุงไทย จำกัด (มหาชน) (เคทีซี) ผ่านช่องทางอิเล็กทรอนิกส์และข้าพเจ้ายินยอมให้เคทีซีใช้หรือเปิดเผยข้อมูลข้างต้นในการติดต่อข้าพเจ้า​และเพื่อประโยชน์ในการ​พิจารณาตามคำขอสมัครใช้ผลิตภัณฑ์​เคทีซีของข้าพเจ้า
+          </label>
+          <div class="invalid-feedback">
+            You must agree before submitting.
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="col-md-4">
+        <center><button class="btn btn-primary" type="submit">ส่งข้อมูล</button></center>
+      </div>
+      
+    </form>
+
+    
+    <script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+          .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+
+              form.classList.add('was-validated')
+            }, false)
+          })
+      })()
+
+
+
+    </script>
+</body>
+</html>
