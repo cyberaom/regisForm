@@ -24,16 +24,16 @@ app.post("/", (req, res) => {
     "</br>Last Name: " + Lname +
     "</br>Mobile Number: " + mobileNO +
     "</br>E-mail: " + email +
-    "</br>Income: " + income
+    "</br>Income: " + income +"</br>"
     );
-  // res.send([
-  //   'Data received',
-  //   `First Name: ${Fname}`,
-  //   `Last Name: ${Lname}`,
-  //   `Mobile Number: ${mobileNO}`,
-  //   `E-mail: ${email}`,
-  //   `Income: ${income}`,
-  // ]);
+  res.send([
+    'Data received',
+    `First Name: ${Fname}`,
+    `Last Name: ${Lname}`,
+    `Mobile Number: ${mobileNO}`,
+    `E-mail: ${email}`,
+    `Income: ${income}`,
+  ]);
 
 });
  
