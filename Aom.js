@@ -20,10 +20,11 @@ app.post("/", (req, res) => {
   //console.log("Last Name: " + Lname);
   //res.send("Data received");
   res.send(
-    "Data received</br> First Name: " + Fname + "</br>Last Name: " + Lname
-    
-    
-    
+    "Data received</br> First Name: " + Fname + 
+    "</br>Last Name: " + Lname +
+    "</br>Mobile Number: " + mobileNO +
+    "</br>E-mail: " + email +
+    "</br>Income: " + income
     );
   // res.send([
   //   'Data received',
