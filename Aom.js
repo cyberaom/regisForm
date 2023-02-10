@@ -12,11 +12,20 @@ app.get("/", (req, res) => {
 app.post("/", (req, res) => {
   const Fname = req.body.Fname;
   const Lname = req.body.Lname;
-  console.log("First Name: " + Fname);
-  console.log("Last Name: " + Lname);
+  const mobileNO = req.body.mobileNO;
+  const email = req.body.email;
+  const income = req.body.income;
+  console.log("Received");
+  //console.log("First Name: " + Fname);
+  //console.log("Last Name: " + Lname);
   //res.send("Data received");
-  res.send("Data received</br>" + "First Name: " + Fname + "</br>Last Name: " + Lname);
-  //res.render("Test Date Received");
+  res.send(
+    "Data received</br> First Name: " + Fname + 
+    "</br>Last Name: " + Lname +
+    "</br>Mobile Number: " + mobileNO +
+    "</br>E-mail: " + email +
+    "</br>Income: " + income +"</br>"
+    );
 
 });
  
