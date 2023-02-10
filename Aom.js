@@ -16,9 +16,7 @@ app.post("/", (req, res) => {
   const email = req.body.email;
   const income = req.body.income;
   console.log("Received");
-  //console.log("First Name: " + Fname);
-  //console.log("Last Name: " + Lname);
-  //res.send("Data received");
+
   res.send(
     "Data received</br> First Name: " + Fname + 
     "</br>Last Name: " + Lname +
