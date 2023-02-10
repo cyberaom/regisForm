@@ -26,14 +26,6 @@ app.post("/", (req, res) => {
     "</br>E-mail: " + email +
     "</br>Income: " + income +"</br>"
     );
-  res.send([
-    'Data received',
-    `First Name: ${Fname}`,
-    `Last Name: ${Lname}`,
-    `Mobile Number: ${mobileNO}`,
-    `E-mail: ${email}`,
-    `Income: ${income}`,
-  ]);
 
 });
  
