@@ -15,6 +15,7 @@ app.post("/", (req, res) => {
   const mobileNO = req.body.mobileNO;
   const email = req.body.email;
   const income = req.body.income;
+  const province = req.body.province;
   console.log("Received");
 
   // res.send(
@@ -30,7 +31,7 @@ app.post("/", (req, res) => {
             </br>Mobile Number: ${mobileNO}
             </br>E-mail: ${email}
             </br>Income: ${income}
-            </br>test
+            </br>Province: ${province}
   
   `);
 
