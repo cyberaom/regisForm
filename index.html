@@ -68,7 +68,7 @@
       <div class="row"><br /></div>
       <div class="row">
       <div class="form-floating col-md-4">
-        <select class="form-select" id="income" name="income" required>
+        <select class="form-select" id="income" name="income" data-testid="selectIncome" required>
           <option selected disabled value="">- กรุณาเลือก -</option>
           <option value="15,000-29,000">15,000-29,000 บาท</option>
           <option value="30,000-49,000">30,000-49,000 บาท</option>
@@ -80,7 +80,41 @@
         </div>
       </div>
       </div>
+
+      <div class="row"><br /></div>
+      <div class="row">
+      <div class="form-floating col-md-4">
+        <select class="form-select" id="province" name="province" data-testid="selectProvince" required>
+          <option selected disabled value="">- จังหวัด -</option>
+          <option value="กทม">กทม</option>
+          <option value="นครปฐม">นครปฐม</option>
+          <option value="นนทบุรี">นนทบุรี</option>
+        </select>
+        <label for="province" class="form-label">จังหวัด</label>
+        <div class="invalid-feedback">
+          Please select a valid income.
+        </div>
+      </div>
+      </div>
       
+      <div class="row"><br /></div>
+      <div class="row">
+      <div class="col-md-4">
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>
+          <label class="form-check-label" for="check1">Option 1</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+          <label class="form-check-label" for="check2">Option 2</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" disabled>
+          <label class="form-check-label">Option 3</label>
+        </div>
+      </div>
+      </div>
+
       <div class="row"><br /></div>
       <div class="row">
       <div class="col-md-4">
