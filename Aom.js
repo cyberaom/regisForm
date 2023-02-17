@@ -17,13 +17,21 @@ app.post("/", (req, res) => {
   const income = req.body.income;
   console.log("Received");
 
-  res.send(
-    "Data received</br> First Name: " + Fname + 
-    "</br>Last Name: " + Lname +
-    "</br>Mobile Number: " + mobileNO +
-    "</br>E-mail: " + email +
-    "</br>Income: " + income +"</br>"
-    );
+  // res.send(
+  //   "Data received</br> First Name: " + Fname + 
+  //   "</br>Last Name: " + Lname +
+  //   "</br>Mobile Number: " + mobileNO +
+  //   "</br>E-mail: " + email +
+  //   "</br>Income: " + income +"</br>"
+  //   );
+
+  res.send(`Data received</br> First Name: ${Fname}
+            </br>Last Name: ${Lname}
+            </br>Mobile Number: ${mobileNO}
+            </br>E-mail: ${email}
+            </br>Income: ${income}
+  
+  `);
 
 });
  
